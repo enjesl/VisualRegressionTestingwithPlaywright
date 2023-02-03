@@ -1,0 +1,19 @@
+[
+    {
+      "actual": "https://www.example.com/actual",
+      "expected": "https://www.example.com/expected",
+      "avoidPixelCount": 100,
+      "folder": "screenshots",
+      "waittime": 2000,
+      "fullPage": false
+    },
+    {
+      "actual": "https://www.example.com/actual2",
+      "expected": "https://www.example.com/expected2",
+      "avoidPixelCount": 200,
+      "folder": "screenshots2",
+      "waittime": 3000,
+      "fullPage": true
+    }
+  ]
+  
