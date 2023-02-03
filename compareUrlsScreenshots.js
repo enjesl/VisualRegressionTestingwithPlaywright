@@ -18,8 +18,7 @@ async function compareScreenshots(actualImage, expectedImage, diffImage, avoidPi
   const img1Data = Uint8Array.from(img1.bitmap.data);
   const img2Data = Uint8Array.from(img2.bitmap.data);
   const numDiffPixels = pixelmatch(img1Data, img2Data, diff.data, width, height, {threshold: 0.1});
-  const date = new Date();
-  const dateTime = date.toLocaleString().replace(/\//g, '-').replace(/:/g, '-');
+
 
   const folderPath = `${folder}_diff`;
   if (!fs.existsSync(folderPath)) {
