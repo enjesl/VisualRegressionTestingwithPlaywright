@@ -1,0 +1,55 @@
+# Node
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+apps/ # Browser binaries
+
+# Test artifacts (screenshots)
+# Ignore actual and diff images, but keep baseline (expected) images.
+# Playwright typically stores snapshots in a directory structure like:
+# tests/__screenshots__/{testFilePath}/{snapshotName}-actual.png
+# tests/__screenshots__/{testFilePath}/{snapshotName}-diff.png
+# tests/__screenshots__/{testFilePath}/{snapshotName}-expected.png
+# Or, if using {arg} in snapshotPathTemplate:
+# tests/__screenshots__/{testFilePath}/{arg}-actual.png (this is what we have)
+# tests/__screenshots__/{testFilePath}/{arg}-diff.png
+# tests/__screenshots__/{testFilePath}/{arg}.png (this is our baseline)
+
+# So, we want to ignore -actual.png and -diff.png files.
+# And we want to keep the baseline files (those without -actual or -diff suffix, or with .expected.png)
+tests/__screenshots__/**/*.actual.png
+tests/__screenshots__/**/*.diff.png
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs
+*.log
+
+# Misc
+.nyc_output
+coverage
+.scannerwork
+*.tsbuildinfo
