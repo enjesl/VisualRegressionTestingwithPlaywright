@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>New Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>New Comparison</h1>
+    <button id="backBtn">Back</button>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+  <form id="compareForm">
+    <label>Actual URL:<input type="text" id="actual" required></label>
+    <label>Expected URL:<input type="text" id="expected"></label>
+    <label>Or Design Image:<input type="file" id="design" accept=".png,.jpg,.jpeg"></label>
+    <label>Pixel Threshold:<input type="number" id="threshold" value="0"></label>
+    <label>Wait Time (ms):<input type="number" id="wait" value="0"></label>
+    <label><input type="checkbox" id="fullPage" checked> Full Page</label>
+    <button type="submit" id="runBtn">Run Comparison</button>
+  </form>
+  <div id="status"></div>
+  <script src="new.js"></script>
+</body>
+</html>

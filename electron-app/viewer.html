@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Report Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Report Viewer</h1>
+    <button id="backBtn">Back</button>
+    <button id="exportBtn">Export</button>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+  <div class="img-container">
+    <div>
+      <h3>Actual</h3>
+      <img id="actualImg">
+    </div>
+    <div>
+      <h3>Expected</h3>
+      <img id="expectedImg">
+    </div>
+    <div>
+      <h3>Diff</h3>
+      <img id="diffImg">
+    </div>
+  </div>
+  <pre id="json"></pre>
+  <script src="viewer.js"></script>
+</body>
+</html>

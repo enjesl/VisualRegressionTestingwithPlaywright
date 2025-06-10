@@ -100,3 +100,16 @@ Feel free to contribute to the project by submitting a pull request or creating 
 ## License
 
 This project is licensed under the MIT License.
+
+## Electron UI
+
+A modern Electron dashboard is provided in the `electron-app/` folder.
+Launch it with:
+
+```bash
+npm run start-electron
+```
+
+Use the dashboard to run new comparisons and browse previous reports.
+All reports are saved under `reports/` with timestamped folders containing
+screenshots, diff images and a `result.json` summary.

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Visual Test Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Visual Test Dashboard</h1>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+  <div class="actions">
+    <input type="text" id="search" placeholder="Search reports" />
+    <button id="newBtn">New Comparison</button>
+  </div>
+  <table id="reportTable">
+    <thead>
+      <tr><th>Timestamp</th><th>Status</th><th>Mismatch Pixels</th></tr>
+    </thead>
+    <tbody id="reportsBody"></tbody>
+  </table>
+  <script src="dashboard.js"></script>
+</body>
+</html>
