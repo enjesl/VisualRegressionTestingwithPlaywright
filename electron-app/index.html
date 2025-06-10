@@ -2,42 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Visual UI Testing</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    .container { display: flex; gap: 20px; }
-    .image-container img { max-width: 100%; height: auto; }
-  </style>
+  <title>Visual Test Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Visual UI Testing Tool</h1>
-  <div>
-    <label>URL 1: <input type="text" id="url1" placeholder="https://example.com"></label>
+  <header>
+    <h1>Visual Test Dashboard</h1>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+  <div class="actions">
+    <input type="text" id="search" placeholder="Search reports" />
+    <button id="newBtn">New Comparison</button>
   </div>
-  <div>
-    <label>URL 2: <input type="text" id="url2" placeholder="https://example.com"></label>
-  </div>
-  <div>
-    <label>Or design image: <input type="file" id="designImage" accept=".png,.jpg,.jpeg"></label>
-  </div>
-  <button id="runTest">Run Visual Test</button>
-
-  <h2>Results</h2>
-  <div id="resultText"></div>
-  <div class="container">
-    <div class="image-container">
-      <h3>Image 1</h3>
-      <img id="img1" />
-    </div>
-    <div class="image-container">
-      <h3>Image 2</h3>
-      <img id="img2" />
-    </div>
-    <div class="image-container">
-      <h3>Diff</h3>
-      <img id="diffImg" />
-    </div>
-  </div>
-  <script src="renderer.js"></script>
+  <table id="reportTable">
+    <thead>
+      <tr><th>Timestamp</th><th>Status</th><th>Mismatch Pixels</th></tr>
+    </thead>
+    <tbody id="reportsBody"></tbody>
+  </table>
+  <script src="dashboard.js"></script>
 </body>
 </html>

@@ -103,12 +103,13 @@ This project is licensed under the MIT License.
 
 ## Electron UI
 
-An Electron-based desktop interface is available in the `electron-app/` folder.
-After installing dependencies, start it with:
+A modern Electron dashboard is provided in the `electron-app/` folder.
+Launch it with:
 
 ```bash
 npm run start-electron
 ```
 
-The app captures screenshots using Playwright and compares them with
-`pixelmatch`. Results are stored in `electron-app/results/`.
+Use the dashboard to run new comparisons and browse previous reports.
+All reports are saved under `reports/` with timestamped folders containing
+screenshots, diff images and a `result.json` summary.
