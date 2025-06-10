@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Visual UI Testing</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .container { display: flex; gap: 20px; }
+    .image-container img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <h1>Visual UI Testing Tool</h1>
+  <div>
+    <label>URL 1: <input type="text" id="url1" placeholder="https://example.com"></label>
+  </div>
+  <div>
+    <label>URL 2: <input type="text" id="url2" placeholder="https://example.com"></label>
+  </div>
+  <div>
+    <label>Or design image: <input type="file" id="designImage" accept=".png,.jpg,.jpeg"></label>
+  </div>
+  <button id="runTest">Run Visual Test</button>
+
+  <h2>Results</h2>
+  <div id="resultText"></div>
+  <div class="container">
+    <div class="image-container">
+      <h3>Image 1</h3>
+      <img id="img1" />
+    </div>
+    <div class="image-container">
+      <h3>Image 2</h3>
+      <img id="img2" />
+    </div>
+    <div class="image-container">
+      <h3>Diff</h3>
+      <img id="diffImg" />
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

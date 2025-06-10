@@ -100,3 +100,15 @@ Feel free to contribute to the project by submitting a pull request or creating 
 ## License
 
 This project is licensed under the MIT License.
+
+## Electron UI
+
+An Electron-based desktop interface is available in the `electron-app/` folder.
+After installing dependencies, start it with:
+
+```bash
+npm run start-electron
+```
+
+The app captures screenshots using Playwright and compares them with
+`pixelmatch`. Results are stored in `electron-app/results/`.
